@@ -13,15 +13,13 @@ w3[Large Whale]
 f1[Small Whalefall]
 f2[Medium Whalefall]
 f3[Large Whalefall]
-f1 & f2 & f3
--- Attracts --> p1
+f1 & f2 & f3 --> p1
 -- Attracts --> p2
 -- Attracts --> p3
 p1 -- Eaten by --> c1
 c1 & p2 -- Eaten by --> c2
 c2 & p3 -- Eaten by --> c3
-c3
--- Eaten by --> w1
+c3 -- Eaten by --> w1
 -- Attracts --> w2
 -- Attracts --> w3
 w1 -- Dies --> f1
