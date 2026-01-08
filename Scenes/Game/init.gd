@@ -22,7 +22,6 @@ func _ready() -> void:
 			var title = RichTextLabel.new()
 			title.autowrap_mode = TextServer.AUTOWRAP_OFF
 			title.size_flags_vertical = Control.SIZE_EXPAND_FILL
-			title.size_flags_stretch_ratio = 0.2
 			title.parse_bbcode("[font_size=50]%s" % i.name)
 			vbox.add_child(title)
 			var desc = RichTextLabel.new()

@@ -9,7 +9,7 @@ _:
 flora:
   - <<: *flora
     name: Moss
-    desc: "[i]Fish Carpet[/i]"
+    desc: Fish Carpet
   - <<: *flora
     name: Seaweed
     desc: Leaves!
@@ -22,4 +22,4 @@ fauna:
     desc: Biggun
   - <<: *fauna
     name: Crab
-    desc: "[i]*pinch*[/i]"
+    desc: "*pinch*"
