@@ -1,0 +1,30 @@
+{
+  "_": {
+    "name": "",
+    "desc": ""
+  },
+  "flora": [
+    {
+      "name": "Moss",
+      "desc": "MOSS!"
+    },
+    {
+      "desc": "",
+      "name": "Seaweed"
+    }
+  ],
+  "fauna": [
+    {
+      "desc": "",
+      "name": "Small Fish"
+    },
+    {
+      "desc": "",
+      "name": "Big Fish"
+    },
+    {
+      "desc": "",
+      "name": "Crab"
+    }
+  ]
+}

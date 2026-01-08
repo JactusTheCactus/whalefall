@@ -1,5 +1,3 @@
-[gd_resource type="Theme" format=3 uid="uid://5gm34kmuna4f"]
-
-[resource]
-Button/font_sizes/font_size = 50
-RichTextLabel/font_sizes/normal_font_size = 50
+version https://git-lfs.github.com/spec/v1
+oid sha256:263ea9907dfeda67ac7d92cfc864328ec2b60ac3f1157ccd8c650179ee90c013
+size 143586690

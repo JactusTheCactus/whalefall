@@ -15,3 +15,5 @@ res://Scenes/Main/play.gd
 res://Scenes/Game/quit.gd
 res://Scenes/Game/state.gd
 res://Themes/Main.tres
+res://Data/data.yml
+res://Scenes/Game/init.gd

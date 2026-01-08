@@ -2,20 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://5gm34kmuna4f" path="res://Themes/Main.tres" id="1_gwu2e"]
 [ext_resource type="Script" uid="uid://d21ur4vup8m70" path="res://Scenes/Game/quit.gd" id="1_rdw05"]
-
-[sub_resource type="GDScript" id="GDScript_rdw05"]
-script/source = "extends Control
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta: float) -> void:
-	pass
-"
+[ext_resource type="Script" uid="uid://b0tjp1n3jdal0" path="res://Scenes/Game/init.gd" id="1_xbxml"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rdw05"]
 bg_color = Color(0.49803922, 0.49803922, 0.49803922, 1)
@@ -34,9 +21,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = SubResource("GDScript_rdw05")
+script = ExtResource("1_xbxml")
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Screen" type="Panel" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -45,7 +32,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_rdw05")
 
-[node name="Left" type="HBoxContainer" parent="Panel"]
+[node name="Left" type="HBoxContainer" parent="Screen"]
 layout_mode = 1
 anchors_preset = 9
 anchor_bottom = 1.0
@@ -53,30 +40,18 @@ offset_right = 174.0
 grow_vertical = 2
 alignment = 1
 
-[node name="Rows" type="VBoxContainer" parent="Panel/Left"]
+[node name="Rows" type="VBoxContainer" parent="Screen/Left"]
 layout_mode = 2
 size_flags_horizontal = 3
 alignment = 1
 
-[node name="RichTextLabel1" type="Button" parent="Panel/Left/Rows"]
+[node name="Tabs" type="TabContainer" parent="Screen/Left/Rows"]
 layout_mode = 2
 size_flags_vertical = 3
 theme = ExtResource("1_gwu2e")
-text = "First"
+clip_tabs = false
 
-[node name="RichTextLabel2" type="Button" parent="Panel/Left/Rows"]
-layout_mode = 2
-size_flags_vertical = 3
-theme = ExtResource("1_gwu2e")
-text = "Second"
-
-[node name="RichTextLabel3" type="Button" parent="Panel/Left/Rows"]
-layout_mode = 2
-size_flags_vertical = 3
-theme = ExtResource("1_gwu2e")
-text = "Third"
-
-[node name="Center" type="HBoxContainer" parent="Panel"]
+[node name="Center" type="HBoxContainer" parent="Screen"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -86,20 +61,19 @@ offset_right = 59.0
 offset_bottom = 1112.0
 grow_horizontal = 2
 
-[node name="Rows" type="VBoxContainer" parent="Panel/Center"]
+[node name="Rows" type="VBoxContainer" parent="Screen/Center"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Button" type="RichTextLabel" parent="Panel/Center/Rows"]
+[node name="Title" type="RichTextLabel" parent="Screen/Center/Rows"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_gwu2e")
 text = "Whalefall"
 fit_content = true
 autowrap_mode = 0
-script = ExtResource("1_rdw05")
 
-[node name="Right" type="HBoxContainer" parent="Panel"]
+[node name="Right" type="HBoxContainer" parent="Screen"]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -108,11 +82,11 @@ offset_left = -118.0
 offset_bottom = 1112.0
 grow_horizontal = 0
 
-[node name="Rows" type="VBoxContainer" parent="Panel/Right"]
+[node name="Rows" type="VBoxContainer" parent="Screen/Right"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Button" type="Button" parent="Panel/Right/Rows"]
+[node name="Quit" type="Button" parent="Screen/Right/Rows"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_gwu2e")
@@ -120,4 +94,4 @@ shortcut = SubResource("Shortcut_xbxml")
 text = "Quit"
 script = ExtResource("1_rdw05")
 
-[connection signal="pressed" from="Panel/Right/Rows/Button" to="Panel/Right/Rows/Button" method="_on_pressed"]
+[connection signal="pressed" from="Screen/Right/Rows/Quit" to="Screen/Right/Rows/Quit" method="_on_pressed"]

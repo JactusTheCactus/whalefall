@@ -1,0 +1,16 @@
+_: &default
+  name: !!str
+  desc: !!str
+flora:
+  - <<: *default
+    name: Moss
+    desc: MOSS!
+  - <<: *default
+    name: Seaweed
+fauna:
+  - <<: *default
+    name: Small Fish
+  - <<: *default
+    name: Big Fish
+  - <<: *default
+    name: Crab
