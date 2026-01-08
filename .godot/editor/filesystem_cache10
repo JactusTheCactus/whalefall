@@ -1,3 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1767837074
+::res://::1767848413
 icon.svg::CompressedTexture2D::9088589789206547070::1767837069::1767837076::1::::<><><>0<>0<>45f54ad5a391ae72c4b3096661785abd<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Colours/::1767843763
+Main.tres::StyleBoxFlat::3631950478465940825::1767843763::0::1::::<><><>0<>0<><>::
+::res://Scenes/::1767848413
+quit.gd::GDScript::9109280905811556673::1767848337::0::1::::<>Button<><>0<>0<><>::
+::res://Scenes/Game/::1767848399
+Game.tscn::PackedScene::4064117940426631762::1767848415::0::1::::<><><>0<>0<><>::uid://d21ur4vup8m70::::res://Scenes/quit.gd
+::res://Scenes/Main/::1767848413
+Main.tscn::PackedScene::4357016324001194946::1767848413::0::1::::<><><>0<>0<><>::uid://br0lxt78nktvd::::res://Colours/Main.tres<>uid://mnb804fiylxg::::res://Scenes/Main/play.gd
+play.gd::GDScript::869224040772700000::1767848301::0::1::::<>Button<><>0<>0<><>::

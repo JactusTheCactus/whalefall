@@ -1,0 +1,17 @@
+res://main.tscn
+res://control.gd
+res://Scenes/Main.tscn
+res://Colours/Main.tres
+res://Colours/Main.gdshader
+res://State.gd
+res://Scripts/State.gd
+res://Scenes/button.gd
+res://Scenes/play.gd
+res://Scenes/Game.tscn
+res://Scenes/quit.gd
+res://Scenes/Main/Main.tscn
+res://Scenes/Game/Game.tscn
+res://Scenes/Main/play.gd
+res://Scenes/Game/quit.gd
+res://Scenes/Game/state.gd
+res://Themes/Main.tres
