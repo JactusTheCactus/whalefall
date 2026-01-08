@@ -1,16 +1,25 @@
-_: &default
-  name: !!str
-  desc: !!str
+_:
+  - &default
+    name: !!str
+    desc: !!str
+  - &flora
+    <<: *default
+  - &fauna
+    <<: *default
 flora:
-  - <<: *default
+  - <<: *flora
     name: Moss
-    desc: MOSS!
-  - <<: *default
+    desc: "[i]Fish Carpet[/i]"
+  - <<: *flora
     name: Seaweed
+    desc: Leaves!
 fauna:
-  - <<: *default
+  - <<: *fauna
     name: Small Fish
-  - <<: *default
+    desc: Just a li'l guy!
+  - <<: *fauna
     name: Big Fish
-  - <<: *default
+    desc: Biggun
+  - <<: *fauna
     name: Crab
+    desc: "[i]*pinch*[/i]"

@@ -17,3 +17,4 @@ res://Scenes/Game/state.gd
 res://Themes/Main.tres
 res://Data/data.yml
 res://Scenes/Game/init.gd
+res://Data/data.json

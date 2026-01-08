@@ -1,1 +1,1 @@
-Themes/Main.tres filter=lfs diff=lfs merge=lfs -text
+Themes/* filter=lfs diff=lfs merge=lfs -text
